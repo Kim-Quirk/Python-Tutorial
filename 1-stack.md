@@ -44,23 +44,23 @@ Another good example of stacks is the "undo" option in a text editor. We've all 
 
 Let's have a look at what happens when we type in a word document.
 
-![Picture of word document](./images/OhNo.png)
+![Picture of word document](images/OhNo.png)
 
 Uh-oh! We have a typo. Let's press ctrl + z, or "pop" the item off the stack.
 
-![Picture of word document](./images/One.png)
+![Picture of word document](images/One.png)
 
 Let's do it again.. We need to get to our typo!
 
-![Picture of word document](./images/Two.png)
+![Picture of word document](images/Two.png)
 
 Let's do it again.. We need to get to our typo!
 
-![Picture of word document](./images/Three.png)
+![Picture of word document](images/Three.png)
 
 There we go. Now we need to "push" items back onto our stack. This time spelled correctly!
 
-![Picture of word document](./images/Four.png)
+![Picture of word document](images/Four.png)
 
 What would our word document look like in python? Take a second to ponder this before looking at the code example below.
 ```python
@@ -95,7 +95,7 @@ sentence.append("seems!")
 ## **Operations**
 Here are some common stack operations in python. In python, the most common stack we use is a list. As you can see, stack operations are relatively fast, all with a performance of O(1). We can push a value onto the stack (append an item onto a list), pop an item off the back of the stack (pop item off the back of a list), get the size of the stack (get the length of a list), and check whether or not our stack is empty (check if the length of our list is zero).
 
-![Table of common operations and big o](../Python-Tutorial/images/table.png)
+![Table of common operations and big o](images/table.PNG)
 
 ---
 ## Example: Text Inverter
