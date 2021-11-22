@@ -44,23 +44,23 @@ Another good example of stacks is the "undo" option in a text editor. We've all 
 
 Let's have a look at what happens when we type in a word document.
 
-![Picture of word document](images/ohno.png)
+![Picture of word document](images/ohno.PNG)
 
 Uh-oh! We have a typo. Let's press ctrl + z, or "pop" the item off the stack.
 
-![Picture of word document](images/one.png)
+![Picture of word document](images/one.PNG)
 
 Let's do it again.. We need to get to our typo!
 
-![Picture of word document](images/two.png)
+![Picture of word document](images/two.PNG)
 
 Let's do it again.. We need to get to our typo!
 
-![Picture of word document](images/three.png)
+![Picture of word document](images/three.PNG)
 
 There we go. Now we need to "push" items back onto our stack. This time spelled correctly!
 
-![Picture of word document](images/four.png)
+![Picture of word document](images/four.PNG)
 
 What would our word document look like in python? Take a second to ponder this before looking at the code example below.
 ```python
