@@ -1,4 +1,4 @@
-# Python Structures Tutorial
+# Python Data Structures Tutorial
 
 Welcome to the Python Data Structures Tutorial.  Every Python programmer should understand these basic Data Structure topics:
 
