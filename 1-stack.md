@@ -95,7 +95,7 @@ sentence.append("seems!")
 ## **Operations**
 Here are some common stack operations in python. In python, the most common stack we use is a list. As you can see, stack operations are relatively fast, all with a performance of O(1). We can push a value onto the stack (append an item onto a list), pop an item off the back of the stack (pop item off the back of a list), get the size of the stack (get the length of a list), and check whether or not our stack is empty (check if the length of our list is zero).
 
-![Table of common operations and big o](/images/table.png)
+![Table of common operations and big o](../Python-Tutorial/images/table.png)
 
 ---
 ## Example: Text Inverter
