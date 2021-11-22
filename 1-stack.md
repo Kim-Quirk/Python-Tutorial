@@ -44,7 +44,7 @@ Another good example of stacks is the "undo" option in a text editor. We've all 
 
 Let's have a look at what happens when we type in a word document.
 
-![Picture of word document](images/OhNo.png)
+![Picture of word document](images/OhNo.png?raw=true "OhNo")
 
 Uh-oh! We have a typo. Let's press ctrl + z, or "pop" the item off the stack.
 
