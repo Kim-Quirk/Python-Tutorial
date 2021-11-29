@@ -98,7 +98,7 @@ Here are some common stack operations in python. In python, the most common stac
 ![Table of common operations and big o](images/table.PNG)
 
 ---
-## Example: Text Inverter
+## **Example Problem: Text Inverter**
 
 In the example below, we will write a program utilizing our knowledge of stacks that will return the inverse of a given string. Before we begin coding, we should first think about the requirements for our code. What do we want our code to do?
 
@@ -139,7 +139,7 @@ If you want to look at the actual python file and mess around with it, click [he
 
 ---
 
-## Problem to Solve: Create a Stack Class
+## **Problem to Solve: Create a Stack Class**
 
 Now it's time for you to practice stacks on your own. Using your new knowledge, create a Python class for stacks. This class should have the following definitions: display, getSize, isEmpty, push, and popOff. Display will print everything in the stack to the console. The next definition, getSize, will return the size of the stack (number of items in the stack) as a number. The next function, isEmpty, will return True or False based off whether or not the stack is empty (has zero items). The definition for push will add a given value to the back of the stack. Finally, popOff will remove the last item from the stack.
 
