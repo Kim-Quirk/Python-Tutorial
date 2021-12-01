@@ -267,6 +267,13 @@ Now its time for you to use your new knowledge on Linked Lists. Using this knowl
 
 We will be providing you with some basic code to help you get started. See the starting code file here: [linked_list_start.py](./python/linked_list_start.py)
 
+Starting with the following linked list, [5, 4, 3, 7, 2, 6, 1], run the following tests below to see if your solution is working.
+
+* Test 1: Add positions 1 and 3 together. This should equal 8.
+* Test 2: Add positions 3 and 5 together. This should equal 5.
+* Test 3: Add positions 2 and 4 together. This should equal 11.
+* Test 4: Add positions 5 and 6 together. This should equal 8.
+
 Use the following code test cases to test your solution.
 
 ```python
@@ -287,12 +294,6 @@ print(ll.add_values(3, 5)) #5
 print(ll.add_values(2, 4)) #11
 print(ll.add_values(5, 6)) #8
 ```
-Starting with the following linked list, [5, 4, 3, 7, 2, 6, 1], run the following tests below to see if your solution is working.
-
-* Test 1: Add positions 1 and 3 together. This should equal 8.
-* Test 2: Add positions 3 and 5 together. This should equal 5.
-* Test 3: Add positions 2 and 4 together. This should equal 11.
-* Test 4: Add positions 5 and 6 together. This should equal 8.
 
 Once you have given this problem an honest attempt, have a look at the solution: [linked_list.py](./python/linked_list.py).
 
