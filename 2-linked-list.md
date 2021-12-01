@@ -265,69 +265,11 @@ def remove_head(self):
 
 Now its time for you to use your new knowledge on Linked Lists. Using this knowledge, you will take one linked list and add together two values from within the list. The user will specify the positions to add together, for example, add together the nth and kth nodes. Your program should loop through the list (already provided to you) until it finds the corresponding nodes, add them together, and return the result. Assume the first node is a link list is position one, the second would be position two, and so on.
 
-We will be providing you with some basic code to help you get started.
+We will be providing you with some basic code to help you get started. See the starting code file here: [linked_list_start.py](./python/linked_list_start.py)
+
+Use the following code test cases to test your solution.
 
 ```python
-
-class LinkedList:
-
-    class Node:
-
-        def __init__(self, data):
-            self.data = data
-            self.next = None
-            self.prev = None
-
-    def __init__(self):
-        self.head = None
-        self.tail = None
-    
-    def insert_head(self, value):
-        # Create the new node
-        new_node = LinkedList.Node(value)  
-        
-        # If the list is empty, then point both head and tail
-        # to the new node.
-        if self.head is None:
-            self.head = new_node
-            self.tail = new_node
-        # If the list is not empty, then only self.head will be
-        # affected.
-        else:
-            new_node.next = self.head # Connect new node to the previous head
-            self.head.prev = new_node # Connect the previous head to the new node
-            self.head = new_node      # Update the head to point to the new node
-
-    def insert_tail(self, value):
-        # Create the new node
-        new_node = LinkedList.Node(value)  
-        
-        # If the list is empty, then point both head and tail
-        # to the new node.
-        if self.head is None:
-            self.head = new_node
-            self.tail = new_node
-        # If the list is not empty, then only self.tail will be
-        # affected.
-        else:
-           new_node.prev = self.tail
-           self.tail.next = new_node
-           self.tail = new_node
-    
-    def __iter__(self):
-        # Your code for an iter function goes here.
-    
-    def __str__(self):
-        output = "linkedlist["
-        first = True
-        for value in self:
-            if first:
-                first = False
-            else:
-                output += ", "
-            output += str(value)
-        output += "]"
-        return output
 
 ll = LinkedList()
 ll.insert_tail(1)
@@ -352,8 +294,6 @@ Starting with the following linked list, [5, 4, 3, 7, 2, 6, 1], run the followin
 * Test 3: Add positions 2 and 4 together. This should equal 11.
 * Test 4: Add positions 5 and 6 together. This should equal 8.
 
-If you need a starting file, use this file here: [linked_list_start.py](./python/linked_list_start.py). 
-
-Once you have given this prolem an honest attempt, have a look at the solution: [linked_list.py](./python/linked_list.py).
+Once you have given this problem an honest attempt, have a look at the solution: [linked_list.py](./python/linked_list.py).
 
 [Back to Welcome Page](0-welcome.md)
