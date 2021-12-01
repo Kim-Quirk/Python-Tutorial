@@ -209,55 +209,147 @@ Remove Function Requirements:
 * Removes given input value
 
 ```python
+import LinkedList
+import Node
+
 def remove(self, value):
     current = self.head
-    while current is not None: # Loop until we have reached the end (None)
-        if current.data == value: # Do something with the current node
+     # Loop until we have reached the end (None)
+    while current is not None:
+        # Do something with the current node
+        if current.data == value: 
             if current.next is None:
-                self.remove_tail() # If we're at the end, just use the remove tail function.
+                # If we're at the end, just use the remove tail function.
+                self.remove_tail()
                 return
             elif current.prev is None:
-                self.remove_head() # If we're at the beginning, just use the remove head function.
+                # If we're at the beginning, just use the remove head function.
+                self.remove_head() 
                 return
             else: #Otherwise, remove node from the middle
                 current.next.prev = current.prev 
                 current.prev.next = current.next
                 return
-        current = current.next # Follow the pointer to the next node
+        # Follow the pointer to the next node
+        current = current.next
 
-    def remove_tail(self):
-        """
-        Remove the last node (i.e. the tail) of the linked list.
-        """
-        # If the list has only one item in it, then set head and tail 
-        # to None resulting in an empty list.  This condition will also
-        # cover an empty list.  Its okay to set to None again.
-        if self.head == self.tail:
-            self.head = None
-            self.tail = None
+def remove_tail(self):
+    # If the list has only one item in it, then set head and tail 
+    # to None resulting in an empty list.  This condition will also
+    # cover an empty list.  Its okay to set to None again.
+    if self.head == self.tail:
+        self.head = None
+        self.tail = None
         # If the list has more than one item in it, then only self.tail
         # will be affected.
-        elif self.head is not None:
-            self.tail.prev.next = None  # Disconnect the second to last node from the last node
-            self.tail = self.tail.prev  # Update the tail to point to the second to last node
+    elif self.head is not None:
+        self.tail.prev.next = None  # Disconnect the second to last node from the last node
+        self.tail = self.tail.prev  # Update the tail to point to the second to last node
     
-    def remove_head(self):
-        """ 
-        Remove the first node (i.e. the head) of the linked list.
-        """
-        # If the list has only one item in it, then set head and tail 
-        # to None resulting in an empty list.  This condition will also
-        # cover an empty list.  Its okay to set to None again.
-        if self.head == self.tail:
-            self.head = None
-            self.tail = None
-        # If the list has more than one item in it, then only self.head
-        # will be affected.
-        elif self.head is not None:
-            self.head.next.prev = None  # Disconnect the second node from the first node
-            self.head = self.head.next  # Update the head to point to the second node
+def remove_head(self):
+    # If the list has only one item in it, then set head and tail 
+    # to None resulting in an empty list.  This condition will also
+    # cover an empty list.  Its okay to set to None again.
+    if self.head == self.tail:
+        self.head = None
+        self.tail = None
+    # If the list has more than one item in it, then only self.head
+    # will be affected.
+    elif self.head is not None:
+        self.head.next.prev = None  # Disconnect the second node from the first node
+        self.head = self.head.next  # Update the head to point to the second node
 ```
 
-
 ---
-## **Problem to Solve:**
+## **Problem to Solve: Add two Values of Linked List**
+
+Now its time for you to use your new knowledge on Linked Lists. Using this knowledge, you will take one linked list and add together two values from within the list. The user will specify the positions to add together, for example, add together the nth and kth nodes. Your program should loop through the list (already provided to you) until it finds the corresponding nodes, add them together, and return the result. Assume the first node is a link list is position one, the second would be position two, and so on.
+
+We will be providing you with some basic code to help you get started.
+
+```python
+
+class LinkedList:
+
+    class Node:
+
+        def __init__(self, data):
+            self.data = data
+            self.next = None
+            self.prev = None
+
+    def __init__(self):
+        self.head = None
+        self.tail = None
+    
+    def insert_head(self, value):
+        # Create the new node
+        new_node = LinkedList.Node(value)  
+        
+        # If the list is empty, then point both head and tail
+        # to the new node.
+        if self.head is None:
+            self.head = new_node
+            self.tail = new_node
+        # If the list is not empty, then only self.head will be
+        # affected.
+        else:
+            new_node.next = self.head # Connect new node to the previous head
+            self.head.prev = new_node # Connect the previous head to the new node
+            self.head = new_node      # Update the head to point to the new node
+
+    def insert_tail(self, value):
+        # Create the new node
+        new_node = LinkedList.Node(value)  
+        
+        # If the list is empty, then point both head and tail
+        # to the new node.
+        if self.head is None:
+            self.head = new_node
+            self.tail = new_node
+        # If the list is not empty, then only self.tail will be
+        # affected.
+        else:
+           new_node.prev = self.tail
+           self.tail.next = new_node
+           self.tail = new_node
+    
+    def __iter__(self):
+        # Your code for an iter function goes here.
+    
+    def __str__(self):
+        output = "linkedlist["
+        first = True
+        for value in self:
+            if first:
+                first = False
+            else:
+                output += ", "
+            output += str(value)
+        output += "]"
+        return output
+
+ll = LinkedList()
+ll.insert_tail(1)
+ll.insert_head(6)
+ll.insert_head(2)
+ll.insert_head(7)
+ll.insert_head(3)
+ll.insert_head(4)
+ll.insert_head(5)
+print(ll)
+print(ll.add_values(1, 3))
+print(ll)
+print(ll.add_values(1, 3)) #8
+print(ll.add_values(3, 5)) #5
+print(ll.add_values(2, 4)) #11
+print(ll.add_values(5, 6)) #8
+```
+Starting with the following linked list, [5, 4, 3, 7, 2, 6, 1], run the following tests below to see if your solution is working.
+
+* Test 1: Add positions 1 and 3 together. This should equal 8.
+* Test 2: Add positions 3 and 5 together. This should equal 5.
+* Test 3: Add positions 2 and 4 together. This should equal 11.
+* Test 4: Add positions 5 and 6 together. This should equal 8.
+
+You will need to create an iter function to traverse through the Linked List in addition to your math function. If you need a place to start, have a look at [this starting file](./python/linked_list_start.py). Once you have given this prolem an honest attempt, have a look at the [solution](./python/linked_list.py).
