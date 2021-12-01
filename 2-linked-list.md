@@ -159,16 +159,104 @@ The basic steps of removal are to delete the selected node, and update the next 
 
 **Removing from Tail**
 
+1. Set the "next" pointer of the of the second to last node to none (self.tail.prev.next = None)
+2. Set the tail to be the second to last node (self.tail = self.tail.prev)
+
+![Visualization of Removing from Head of Linked List](images/linkedlist7.PNG)
+
+**Removing from Middle**
+
+1. Set the "previous" pointer after the current node to before the current node (current.prev.next = current.prev)
+2. Set the "next" pointer of before the current node to the node after the current node (current.prev.next = current.next)
+
+![Visualization of Removing from Head of Linked List](images/linkedlist8.PNG)
 ---
 ## **Accessing From a Linked List**
+When we want to access from a linked list, we must loop through the list until we find the appropriate node. If we want the third node, we must loop through to the third spot. If we want the fifth node, we must loop through to the fifth spot. Some ways to speed up this process is to start from the head and the tail and search to find it. If our node is towards the end, the tail loop will find it faster.
 
+Here's a basic way to traverse a linked list, going forwards and backwards.
+```python
+def iter(self):
+    # Start at the begining
+    curr = self.head  
+    while curr is not None:
+        print(curr.data)  # Do something with the data
+        curr = curr.next # Go forward in the linked list
+
+def reversed(self):
+    # Start at the end since this is a reverse iteration.
+    curr = self.tail  
+    while curr is not None:
+        print(curr.data)  # Do something with the data
+        curr = curr.prev # Go backwards in the linked list
+```
 
 ---
 ## **Performance**
-
+Python has a linked list available for use known as deque. To use it, you'll have to *import dequeque* and declare your list through *list = deque().* The following graphic anaylzes the performance of *deque()* in python.
+![Visualization of Removing from Head of Linked List](images/linkedlist9.PNG)
 
 ---
-## **Example Problem:**
+## **Example Problem: Remove Function**
+In the example below, we will write some code to remove a value from our linked list. The function should search the list until it finds the given value, then remove it. Take a moment to think about how you'll solve the problem then look at the solution.
+
+Remove Function Requirements:
+* Can remove from tail
+* Remove tail should be a seperate function
+* Can remove from head
+* Remove from head should be a seperate function
+* Can remove from middle
+* Removes given input value
+
+```python
+def remove(self, value):
+    current = self.head
+    while current is not None: # Loop until we have reached the end (None)
+        if current.data == value: # Do something with the current node
+            if current.next is None:
+                self.remove_tail() # If we're at the end, just use the remove tail function.
+                return
+            elif current.prev is None:
+                self.remove_head() # If we're at the beginning, just use the remove head function.
+                return
+            else: #Otherwise, remove node from the middle
+                current.next.prev = current.prev 
+                current.prev.next = current.next
+                return
+        current = current.next # Follow the pointer to the next node
+
+    def remove_tail(self):
+        """
+        Remove the last node (i.e. the tail) of the linked list.
+        """
+        # If the list has only one item in it, then set head and tail 
+        # to None resulting in an empty list.  This condition will also
+        # cover an empty list.  Its okay to set to None again.
+        if self.head == self.tail:
+            self.head = None
+            self.tail = None
+        # If the list has more than one item in it, then only self.tail
+        # will be affected.
+        elif self.head is not None:
+            self.tail.prev.next = None  # Disconnect the second to last node from the last node
+            self.tail = self.tail.prev  # Update the tail to point to the second to last node
+    
+    def remove_head(self):
+        """ 
+        Remove the first node (i.e. the head) of the linked list.
+        """
+        # If the list has only one item in it, then set head and tail 
+        # to None resulting in an empty list.  This condition will also
+        # cover an empty list.  Its okay to set to None again.
+        if self.head == self.tail:
+            self.head = None
+            self.tail = None
+        # If the list has more than one item in it, then only self.head
+        # will be affected.
+        elif self.head is not None:
+            self.head.next.prev = None  # Disconnect the second node from the first node
+            self.head = self.head.next  # Update the head to point to the second node
+```
 
 
 ---
