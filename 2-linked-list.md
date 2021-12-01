@@ -352,4 +352,8 @@ Starting with the following linked list, [5, 4, 3, 7, 2, 6, 1], run the followin
 * Test 3: Add positions 2 and 4 together. This should equal 11.
 * Test 4: Add positions 5 and 6 together. This should equal 8.
 
-You will need to create an iter function to traverse through the Linked List in addition to your math function. If you need a place to start, have a look at [this starting file](./python/linked_list_start.py). Once you have given this prolem an honest attempt, have a look at the [solution](./python/linked_list.py).
+If you need a starting file, use this file here: [linked_list_start.py](./python/linked_list_start.py). 
+
+Once you have given this prolem an honest attempt, have a look at the solution: [linked_list.py](./python/linked_list.py).
+
+[Back to Welcome Page](0-welcome.md)
