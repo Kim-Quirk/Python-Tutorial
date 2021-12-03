@@ -98,6 +98,10 @@ Here are some common stack operations in python. In python, the most common stac
 ![Table of common operations and big o](images/table.PNG)
 
 ---
+## **Common Errors to Watch Out For**
+One of the most common errors is forgetting the format of a stack. The newest item is added to the top, and when you go to remove an item, it is removed from the top. A stack does not work on a first come first serve basis. If this were a line people were waiting in, people would get wuite upset! Those in the back of the line would be served first and the people who got their first would be served last, if at all!
+
+---
 ## **Example Problem: Text Inverter**
 
 In the example below, we will write a program utilizing our knowledge of stacks that will return the inverse of a given string. Before we begin coding, we should first think about the requirements for our code. What do we want our code to do?

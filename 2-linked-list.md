@@ -194,7 +194,14 @@ def reversed(self):
 ---
 ## **Performance**
 Python has a linked list available for use known as deque. To use it, you'll have to *import dequeque* and declare your list through *list = deque().* The following graphic anaylzes the performance of *deque()* in python.
+
 ![Visualization of Removing from Head of Linked List](images/linkedlist9.PNG)
+
+---
+
+## **Common Errors to Watch Out For**
+
+Remember a linked list and a doubly linked list are different. In a normal, not doubly linked list, you cannot traverse backwards, only forwards. In a doubly linked list, you can traverse back and forth as you please. Also remember that whenever you add or delete from a linked list, you must update the surrounding pointers. If you forget to update a pointer, you might be pointing to a blank space in memory since that item was deleted!
 
 ---
 ## **Example Problem: Remove Function**

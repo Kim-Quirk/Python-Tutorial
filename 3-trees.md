@@ -14,6 +14,10 @@
 
 ---
 
+## **Common Errors to Watch Out For**
+
+---
+
 ## **Example Problem:**
 
 ---
