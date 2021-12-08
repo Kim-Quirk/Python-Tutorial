@@ -15,11 +15,13 @@ Let's examine the above image and establish some definitions. The top node is kn
 
 A binary search tree follows the same definition as a binary tree, with a few more rules to follow. A binary search tree follows rules for how to put data into the tree.
 
-![Visualization of a BST](images/tree2.PNG)
+![Visualization of a BST](images/tree11.PNG)
 
 Let's do some practice using the above image. Let's say we want to insert the number 18 to our tree. Starting at the root, is 18 more or less than 15? It's more, so we go to the right subtree. Now, is 18 more or less than 24? It's less, so we go to the left. Since there is an empty space here, we can insert 18 into the empty spot.
 
-This was a very effecient process for inserting into the tree. With each decision, left or right, we elimnate a whole subtree until we reach the end. This is because our binary search tree was balanced.
+![Visualization of Inserting into a BST](images/tree12.PNG)
+
+This was a very effecient process for inserting into the tree. With each decision, left or right, we eliminate a whole subtree until we reach the end. This is because our binary search tree was balanced.
 
 ---
 ## **Balanced vs. Unbalanced**
@@ -31,6 +33,24 @@ So far, all of the trees we have looked at have been balanced. They've had relat
 ![Visualization of an unbalanced BST](images/tree3.PNG)
 
 This tree is very unbalanced. All the nodes are on the right side, with nothing over on the left. This BST looks more similar to our linked lists from the past lesson than a tree. Searching and adding nodes to this unbalanced tree would be  more ineffecient than a balanced tree.
+
+You can take an unbalanced tree and rotate it to make it balanced. Let's have a look at this tree below. So far it's balanced. What happens when we insert a 24 though?
+
+![Visualization of balanced BST](images/rotate0.PNG)
+
+We start at the root. 24 is greater than 10, let's go to the right. 24 is greater than 15, let's go to the right. 24 is also greater than 20, let's go to the right. We're at an empty space, so let's insert the 24 here. Look at the image below for the result.
+
+![Visualization of an unbalanced BST, after inserting 24](images/rotate12.PNG)
+
+Uhoh, now we can see our tree is unbalanced. We have a subtree with the height of one and subtree with a height of 4 (shown in red). We should rotate our tree to make it balanced. Watch the following gif to see a rotation.
+
+![Visualization a BST rotation](images/rotate.gif)
+
+Rotating takes reassigning pointers and reassigning the root node. To see the final, balanced tree after a rotation, look at the image below.
+
+![Visualization of rotated, balanced BST](images/rotate14.PNG)
+
+Now we have 15 as our root node and both subtrees have a height of 2. Our tree is nice and balanced now!
 
 ---
 
