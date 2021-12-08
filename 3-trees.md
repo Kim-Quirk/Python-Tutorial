@@ -1,6 +1,6 @@
 # **Trees**
 
-Trres are similar to linked lists. It has nodes linked together like pointers. However, unlike a linked list, one tree node can connect to multiple nodes. Instead of being a line or a list, a tree is structured more like how you might expect a family tree to appear, with a trunk, branches, and leaves sprouting off.
+Trees are similar to linked lists. It has nodes linked together like pointers. However, unlike a linked list, one tree node can connect to multiple nodes. Instead of being a line or a list, a tree is structured more like how you might expect a family tree to appear, with a trunk, branches, and leaves sprouting off.
 
 ## **Binary Trees**
 
@@ -8,7 +8,7 @@ A binary tree is a tree that links to only one or two other nodes (hence the nam
 
 ![Visualization of a Binary Tree with definitions](images/tree1.PNG)
 
-Let's examine the above image and establish some definitions. The top node is known as the root node (node A). The nodes at the bottom that don't link to any other nodes (nodes F, G, H, and I) are known as leaf nodes. Nodes that are linked to other nodes (such as B and C) are known as parent nodes. The nodes that are connect to the parent nodes (D and E for the B node) are known as child nodes. The collection of nodes to the left or right of any parent node form a subtree, or a tree within a tree. The data is put into the tree by comparing the data to the parent node. For example, if the data being added is less than the parent node, it would be put to the left. If the data was greater than the parent node, it would be put to the right. Depending on the binary search tree, duplicates might be allowed. In the caseof allowing duplicates, the duplicate can go on either side of the subtree.
+Let's examine the above image and establish some definitions. The top node is known as the root node (node A). The nodes at the bottom that don't link to any other nodes (nodes F, G, H, and I) are known as leaf nodes. Nodes that are linked to other nodes (such as B and C) are known as parent nodes. The nodes that are connect to the parent nodes (D and E for the B node) are known as child nodes. The collection of nodes to the left or right of any parent node form a subtree, or a tree within a tree. The data is put into the tree by comparing the data to the parent node. For example, if the data being added is less than the parent node, it would be put to the left. If the data was greater than the parent node, it would be put to the right. Depending on the binary search tree, duplicates might be allowed. In the case of allowing duplicates, the duplicate can go on either side of the subtree.
 
 ---
 ## **Binary Search Tree (BST)**
@@ -52,7 +52,7 @@ Sadly, Python does not have a built in BST class. However, you can create your o
 
 ## **Common Errors to Watch Out For**
 
-Remember, for each tree there can be only one root node! A tree can have multiply parent nodes, subtrees, leaves, and chil nodes, but it can only have one root node.
+Remember, for each tree there can be only one root node! A tree can have multiply parent nodes, subtrees, leaves, and child nodes, but it can only have one root node.
 
 ---
 
@@ -112,7 +112,7 @@ Requirements:
 
 We will be providing you with some basic code to help you get started. See the starting code file here: [trees_start.py](./python/trees_start.py).
 
-Test Casses:
+Test Cases:
 
 * Test 1: Insert 6, 3, 3, 6, 7, 8, and 4
 * Test 2: Print the tree (forwards, smallest to largest). This should show 3, 4, 6, 7, 8.
