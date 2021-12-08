@@ -68,7 +68,7 @@ Requirements:
 
 Take a second to think about how you might code this out. 
 
-Hint: Consider using *yield* and *\_\_contains__*.
+Hint: Consider using `yield` and `\_\_contains__`.
 
 ```python
 # This function is recongized by python. It will allow you to use the "in" keyword.

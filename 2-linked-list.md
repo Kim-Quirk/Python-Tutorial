@@ -12,7 +12,7 @@ This could be useful for navigating a list, but how can we go backwards? Once we
 
 **Doubly Linked Lists**
 
-This is where doubly linked lsits come in. In addition to everythin a normal linked list has, they store a secondary pointer that points to the previous node. So instead of storing a value and one pointer, a doubly linked list will store a value and two pointers. One pointer will point to the next node, and the second will point to the previous node. 
+This is where doubly linked lsits come in. In addition to everything a normal linked list has, they store a secondary pointer that points to the previous node. So instead of storing a value and one pointer, a doubly linked list will store a value and two pointers. One pointer will point to the next node, and the second will point to the previous node. 
 
 ![Visualization of Doubly Linked List](images/linkedlist2.PNG)
 
@@ -193,7 +193,7 @@ def reversed(self):
 
 ---
 ## **Performance**
-Python has a linked list available for use known as deque. To use it, you'll have to *import dequeque* and declare your list through *list = deque().* The following graphic anaylzes the performance of *deque()* in python.
+Python has a linked list available for use known as deque. To use it, you'll have to `import deque` and declare your list through `list = deque().` The following graphic anaylzes the performance of `deque()` in python.
 
 ![Visualization of Removing from Head of Linked List](images/linkedlist9.PNG)
 
