@@ -99,7 +99,7 @@ Here are some common stack operations in python. In python, the most common stac
 
 ---
 ## **Common Errors to Watch Out For**
-One of the most common errors is forgetting the format of a stack. The newest item is added to the top, and when you go to remove an item, it is removed from the top. A stack does not work on a first come first serve basis. If this were a line people were waiting in, people would get wuite upset! Those in the back of the line would be served first and the people who got their first would be served last, if at all!
+One of the most common errors is forgetting the format of a stack. The newest item is added to the top, and when you go to remove an item, it is removed from the top. A stack does not work on a first come first serve basis. If this were a line people were waiting in, people would get quite upset! Those in the back of the line would be served first and the people who got their first would be served last, if at all!
 
 ---
 ## **Example Problem: Text Inverter**
