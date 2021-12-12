@@ -50,11 +50,11 @@ Uh-oh! We have a typo. Let's press ctrl + z, or "pop" the item off the stack.
 
 ![Picture of word document](images/one.PNG)
 
-Let's do it again.. We need to get to our typo!
+Let's do it again... We need to get to our typo!
 
 ![Picture of word document](images/two.PNG)
 
-Let's do it again.. We need to get to our typo!
+Let's do it again... We need to get to our typo!
 
 ![Picture of word document](images/three.PNG)
 
@@ -145,13 +145,13 @@ If you want to look at the actual python file and mess around with it, click [he
 
 ## **Problem to Solve: Create a Stack Class**
 
-Now it's time for you to practice stacks on your own. Using your new knowledge, create a Python class for stacks. This class should have the following definitions: display, getSize, isEmpty, push, and popOff. Display will print everything in the stack to the console. The next definition, getSize, will return the size of the stack (number of items in the stack) as a number. The next function, isEmpty, will return True or False based off whether or not the stack is empty (has zero items). The definition for push will add a given value to the back of the stack. Finally, popOff will remove the last item from the stack.
+Now it's time for you to practice stacks on your own. Using your new knowledge, create a Python class for stacks. This class should have the following definitions: display, getSize, isEmpty, push, and popOff. Display will print everything in the stack to the console. The next definition, getSize, will return the size of the stack (number of items in the stack) as a number. The next function, isEmpty, will return True or False based on whether or not the stack is empty (has zero items). The definition for push will add a given value to the back of the stack. Finally, popOff will remove the last item from the stack.
 
 * Test 1: Push three items to your stack using your push definition.
 * Test 2: Display your stack using the display function.
 * Test 3: Check the size before and after removing the last item from the stack.
 * Test 4: Check if the stack is empty before and after removing all items from the stack
-* Test 5: Remove all items from stack and try and remove an item from an empty stack. Make sure you have error handling!
+* Test 5: Remove all items from the stack and try and remove an item from an empty stack. Make sure you have error handling!
 
 Use the following code test cases to test your Class.
 
