@@ -130,7 +130,7 @@ Requirements:
 * A working traversal function that allows the tree to be displayed from smallest to largest value.
 * A working reversed function that allows the tree to be displayed in reversed from largest or smallest value.
 
-We will be providing you with some basic code to help you get started. See the starting code file here: [trees_start.py](./python/trees_start.py).
+We will be providing you with some basic code to help you get started. See the starting code file here: [Starting Point](./python/trees_start.py).
 
 Test Cases:
 
@@ -138,6 +138,6 @@ Test Cases:
 * Test 2: Print the tree (forwards, smallest to largest). This should show 3, 4, 6, 7, 8.
 * Test 3: Print the reversed tree (largest, to smallest). This should show 8, 7, 6, 4, 3.
 
-Once you have given this problem an honest attempt, have a look at the solution: [trees_solution.py](./python/trees_solution.py).
+Once you have given this problem an honest attempt, have a look at the solution: [Solution](./python/trees_solution.py).
 
 [Back to Welcome Page](0-welcome.md)

@@ -272,7 +272,7 @@ def remove_head(self):
 
 Now it's time for you to use your new knowledge on Linked Lists. Using this knowledge, you will take one linked list and add together two values from within the list. The user will specify the positions to add together, for example, add together the nth and kth nodes. Your program should loop through the list (already provided to you) until it finds the corresponding nodes, add them together, and return the result. Assume the first node is a link list in position one, the second would be position two, and so on.
 
-We will be providing you with some basic code to help you get started. See the starting code file here: [linked_list_start.py](./python/linked_list_start.py)
+We will be providing you with some basic code to help you get started. See the starting code file here: [Starting Point](./python/linked_list_start.py)
 
 Starting with the following linked list, [5, 4, 3, 7, 2, 6, 1], run the following tests below to see if your solution is working.
 
@@ -302,6 +302,6 @@ print(ll.add_values(2, 4)) #11
 print(ll.add_values(5, 6)) #8
 ```
 
-Once you have given this problem an honest attempt, have a look at the solution: [linked_list.py](./python/linked_list.py).
+Once you have given this problem an honest attempt, have a look at the solution: [Solution](./python/linked_list.py).
 
 [Back to Welcome Page](0-welcome.md)
