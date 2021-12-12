@@ -2,7 +2,7 @@
 In Python, a Linked List is similar to an array. It's a way to store a collection of information. However, unlike an array, a linked list stores its information randomly in memory. Each element in a linked list stores a piece of information randomly in memory, then also holds a reference pointing to the next item in the linked list.
 
 ## **Linked List Syntax**
-A link list is comprized of nodes. Each node stores a value (our information) and a link to the next node in the list. This link will point to the next node's memory location so we can keep our list all together.
+A link list is comprised of nodes. Each node stores a value (our information) and a link to the next node in the list. This link will point to the next node's memory location so we can keep our list all together.
 
 ![Visualization of Linked List](images/linkedlist1.PNG)
 
@@ -12,7 +12,7 @@ This could be useful for navigating a list, but how can we go backwards? Once we
 
 **Doubly Linked Lists**
 
-This is where doubly linked lsits come in. In addition to everything a normal linked list has, they store a secondary pointer that points to the previous node. So instead of storing a value and one pointer, a doubly linked list will store a value and two pointers. One pointer will point to the next node, and the second will point to the previous node. 
+This is where doubly linked lists come in. In addition to everything a normal linked list has, they store a secondary pointer that points to the previous node. So instead of storing a value and one pointer, a doubly linked list will store a value and two pointers. One pointer will point to the next node, and the second will point to the previous node. 
 
 ![Visualization of Doubly Linked List](images/linkedlist2.PNG)
 
@@ -145,9 +145,9 @@ Take a moment to think about how we might code inserting into the middle of a li
 
 ---
 ## **Removing From a Linked List**
-Now let's go over the step to remove items from a linked list. Unlike the last section, we will combine the steps and the code syntax together. The example problem and practice problem at the end will help you if you are still struggling with the coding syntax.
+Now let's go over the step to remove items from a linked list. Unlike the last section, we will combine the steps and the code syntax. The example problem and practice problem at the end will help you if you are still struggling with the coding syntax.
 
-The basic steps of removal are to delete the selected node, and update the next and previous nodes to point at eachother.
+The basic steps of removal are to delete the selected node and update the next and previous nodes to point at each other.
 
 **Removing from Head**
 
@@ -209,9 +209,9 @@ In the example below, we will write some code to remove a value from our linked 
 
 Remove Function Requirements:
 * Can remove from tail
-* Remove tail should be a seperate function
+* Remove tail should be a separate function
 * Can remove from head
-* Remove from head should be a seperate function
+* Remove from head should be a separate function
 * Can remove from middle
 * Removes given input value
 
@@ -270,7 +270,7 @@ def remove_head(self):
 ---
 ## **Problem to Solve: Add two Values of Linked List**
 
-Now its time for you to use your new knowledge on Linked Lists. Using this knowledge, you will take one linked list and add together two values from within the list. The user will specify the positions to add together, for example, add together the nth and kth nodes. Your program should loop through the list (already provided to you) until it finds the corresponding nodes, add them together, and return the result. Assume the first node is a link list is position one, the second would be position two, and so on.
+Now it's time for you to use your new knowledge on Linked Lists. Using this knowledge, you will take one linked list and add together two values from within the list. The user will specify the positions to add together, for example, add together the nth and kth nodes. Your program should loop through the list (already provided to you) until it finds the corresponding nodes, add them together, and return the result. Assume the first node is a link list in position one, the second would be position two, and so on.
 
 We will be providing you with some basic code to help you get started. See the starting code file here: [linked_list_start.py](./python/linked_list_start.py)
 
